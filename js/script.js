@@ -25,18 +25,15 @@ function start() {
       const jsonData = await result.json()
       console.log(jsonData)
       document.getElementById("api-image").innerHTML =
-      '<img src="' + 
-        jsonData.url + 
-        '" alt="API image" class="center" ' +
-        '>'
+        '<img src="' + jsonData.url + '" alt="API image" class="center" ' + ">"
     } catch (err) {
       console.log(err)
     }
   }
   getImage("http://openweathermap.org/img/wn/10d@2x.png")
 
-  const getWeather = async (URLAddress) => {
-  
-  }
-  getWeather("https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}")
+  const getWeather = async (URLAddress) => {}
+  getWeather(
+    "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}"
+  )
 }
