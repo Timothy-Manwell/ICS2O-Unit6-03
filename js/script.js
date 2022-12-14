@@ -18,6 +18,25 @@ if (navigator.serviceWorker) {
 /**
  * This function displays an alert.
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+function start() {
+  const getImage = async (URLAddress) => {
+    try {
+      const result = await fetch(URLAddress)
+      const jsonData = await result.json()
+      console.log(jsonData)
+      document.getElementById("api-image").innerHTML =
+      '<img src="' + 
+        jsonData.url + 
+        '" alt="API image" class="center" ' +
+        '>'
+    } catch (err) {
+      console.log(err)
+    }
+  }
+  getImage("http://openweathermap.org/img/wn/10d@2x.png")
+
+  const getWeather = async (URLAddress) => {
+  
+  }
+  getWeather("https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}")
 }
