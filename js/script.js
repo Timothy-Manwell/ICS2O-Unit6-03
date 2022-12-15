@@ -20,18 +20,16 @@ if (navigator.serviceWorker) {
  */
 function start() {
 
-  const getWeather = async ("https://api.openweathermap.org/data/2.5/weather?lat=45.4211435&lon=-75.6900574&appid=fe1d80e1e103cff8c6afd190cad23fa5") => {
+  const getWeather = async (URLAddress) => {
     try{
-      const result = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=45.4211435&lon=-75.6900574&appid=fe1d80e1e103cff8c6afd190cad23fa5")
+      const result = await fetch(URLAddress)
       const jsonData = await result.json()
       console.log(jsonData)
-      document.getElementById("weather").innerHTML =
-        "<p> It is currently " + jsonData.main + ".</p>"
+      document.getElementById("weather").innerHTML = "<p> It is currently " + jsonData + ".</p>"
     } catch (err) {
       console.log(err)
     }
-    getWeather(
-      "https://api.openweathermap.org/data/2.5/weather?lat=45.4211435&lon=-75.6900574&appid=fe1d80e1e103cff8c6afd190cad23fa5"
-    )
   }
+  getWeather("https://api.openweathermap.org/data/2.5/weather?lat=45.4211435&lon=-75.6900574&appid=fe1d80e1e103cff8c6afd190cad23fa5")
 }
+
