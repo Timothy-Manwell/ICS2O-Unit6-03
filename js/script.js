@@ -40,5 +40,5 @@ const getImage = async (URLAddress) => {
   const img = jsonData.weather[1]
 
   document.getElementById("api-image").innerHTML =
-      "<p> Weather: " + img + "</p>"
+    "<p> Weather: " + img + "</p>"
 }
