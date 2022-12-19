@@ -28,7 +28,7 @@ const getWeather = async (URLAddress) => {
 
     const tempInC = jsonData.main.temp - 273.15
     document.getElementById("tempurature").innerHTML =
-      "<p> Tempurature: " + tempInC + "</p>"
+      "<p> Tempurature: " + tempInC.toFixed + "</p>"
   } catch (err) {
     console.log(err)
   }
