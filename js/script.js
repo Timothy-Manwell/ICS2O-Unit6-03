@@ -35,3 +35,10 @@ const getWeather = async (URLAddress) => {
 getWeather(
   "https://api.openweathermap.org/data/2.5/weather?lat=45.4211435&lon=-75.6900574&appid=fe1d80e1e103cff8c6afd190cad23fa5"
 )
+
+const getImage = async (URLAddress) => {
+  const img = jsonData.weather[1]
+
+  document.getElementById("api-image").innerHTML =
+      "<p> Weather: " + img + "</p>"
+}
