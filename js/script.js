@@ -24,7 +24,7 @@ const getWeather = async (URLAddress) => {
     const jsonData = await result.json()
     console.log(jsonData)
     document.getElementById("weather").innerHTML =
-      "<p> It is currently " + jsonData + ".</p>"
+      "<p> It is currently " + jsonData.main_url + ".</p>"
   } catch (err) {
     console.log(err)
   }
