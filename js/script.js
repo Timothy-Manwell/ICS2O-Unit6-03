@@ -27,8 +27,8 @@ const getWeather = async (URLAddress) => {
     document.getElementById("tempurature").innerHTML =
       "<p> Tempurature: " + tempInC.toFixed + "</p>"
     document.getElementById("weather").innerHTML =
-      "<p> Weather: " + jsonData.weather[3] + "</p>"
-    const img = jsonData.weather[1]
+      "<p> Weather: " + jsonData.weather[0].main + "</p>"
+    const img = jsonData.weather[0].icon
     document.getElementById("api-image").innerHTML =
       "<p> Weather: " + img + "</p>"
   } catch (err) {
