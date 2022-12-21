@@ -26,7 +26,10 @@ const getWeather = async (URLAddress) => {
 
     const img = jsonData.weather[0].icon
     document.getElementById("api-image").innerHTML =
-      '<img src="http://openweathermap.org/img/wn/' + img + '@2x.png">' + ' alt="weather image"'
+      '<img src="http://openweathermap.org/img/wn/' +
+      img +
+      '@2x.png">' +
+      ' alt="weather image"'
 
     const tempInC = jsonData.main.temp - 273.15
     document.getElementById("tempurature").innerHTML =
