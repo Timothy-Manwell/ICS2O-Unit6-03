@@ -1,5 +1,5 @@
 /* Created by: Timothy Manwell
-* Created on: Oct 2022
+* Created on: Dec 2022
 * This file contains the CSS for index.html
 */
 
@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: rgb(154 211 232);
+  background-color: rgb(255 255 255);
 }
 
 p {
@@ -31,9 +31,11 @@ p {
   font-weight: bold;
   font-size: 1.5rem;
   padding-top: 15pt;
+  float: center;
 }
 
 img {
-  float: right;
-  margin-right: 15px;
+  float: center;
+  width: 25%;
+  height: auto;
 }
