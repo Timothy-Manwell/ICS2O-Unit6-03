@@ -10,8 +10,8 @@
  * Check service worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/ICS2O-Unit6-03/sw.js", {
+    scope: "/ICS2O-Unit6-03/",
   })
 }
 
@@ -26,7 +26,7 @@ const getWeather = async (URLAddress) => {
 
     const img = jsonData.weather[0].icon
     document.getElementById("api-image").innerHTML =
-      '<img src="http://openweathermap.org/img/wn/' + img + '@2x.png">'
+      '<img src="http://openweathermap.org/img/wn/' + img + '@2x.png">' + ' alt="weather image"'
 
     const tempInC = jsonData.main.temp - 273.15
     document.getElementById("tempurature").innerHTML =
