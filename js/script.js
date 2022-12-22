@@ -15,9 +15,6 @@ if (navigator.serviceWorker) {
   })
 }
 
-/**
- * This function displays an alert.
- */
 const getWeather = async (URLAddress) => {
   try {
     const result = await fetch(URLAddress)

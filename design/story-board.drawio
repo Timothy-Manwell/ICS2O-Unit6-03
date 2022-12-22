@@ -16,7 +16,7 @@
                 <mxCell id="7" value="Weather: x" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="90" y="260" width="120" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Weather: x" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="8" value="Temperature: x°C" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="90" y="280" width="120" height="30" as="geometry"/>
                 </mxCell>
             </root>
